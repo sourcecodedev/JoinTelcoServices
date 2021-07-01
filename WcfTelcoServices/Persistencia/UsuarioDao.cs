@@ -20,7 +20,11 @@ namespace WcfTelcoServices.Persistencia
 
             try
             {
- 
+                using (SqlConnection connect = new SqlConnection(conecsql))
+                {
+                    connect.Open();
+
+                }
             }
             catch (Exception ex)
             {
