@@ -15,5 +15,11 @@ namespace WcfTelcoServices.Dominio
         public string NombreUsuario { get; set; }
         [DataMember]
         public string ContrasenaUsuario { get; set; }
+        [DataMember]
+        public int Intentos { get; set; }
+        [DataMember]
+        public string Estado { get; set; }
+        [DataMember]
+        public string Correo { get; set; }
     }
 }

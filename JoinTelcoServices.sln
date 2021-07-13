@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.31402.337
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfTelcoServices", "WcfTelcoServices\WcfTelcoServices.csproj", "{DBDE89DA-430F-4990-8FD5-F9EEF6ACBF26}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoinTelcoServicesTest", "JoinTelcoServicesTest\JoinTelcoServicesTest.csproj", "{1ED12C1D-5AA8-4630-ACAB-B3F8A079468C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebJoinTelco", "WebJoinTelco\WebJoinTelco.csproj", "{B6ECF768-D45A-4570-A237-1CBA06C78010}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{DBDE89DA-430F-4990-8FD5-F9EEF6ACBF26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBDE89DA-430F-4990-8FD5-F9EEF6ACBF26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBDE89DA-430F-4990-8FD5-F9EEF6ACBF26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ED12C1D-5AA8-4630-ACAB-B3F8A079468C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ED12C1D-5AA8-4630-ACAB-B3F8A079468C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ED12C1D-5AA8-4630-ACAB-B3F8A079468C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ED12C1D-5AA8-4630-ACAB-B3F8A079468C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6ECF768-D45A-4570-A237-1CBA06C78010}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6ECF768-D45A-4570-A237-1CBA06C78010}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6ECF768-D45A-4570-A237-1CBA06C78010}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6ECF768-D45A-4570-A237-1CBA06C78010}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

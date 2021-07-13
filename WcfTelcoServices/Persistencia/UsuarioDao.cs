@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
+
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Web;
 using WcfTelcoServices.Dominio;
 
 namespace WcfTelcoServices.Persistencia
@@ -14,19 +12,27 @@ namespace WcfTelcoServices.Persistencia
         private string conecsql = ConfigurationManager.AppSettings["connect_sql"];
 
 
-        public  bool ValidarConexion(string Usuario, string Password)
+        public bool ValidarConexion(Usuario usuario)
         {
             bool conexionExitosa = false;
 
             try
             {
-                using (SqlConnection connect = new SqlConnection(conecsql))
+                using (SqlConnection cn = new SqlConnection(conecsql))
                 {
-                    connect.Open();
+                    cn.Open();
+                    SqlCommand cmd = new SqlCommand("usp_ValidarUsuario", cn);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@codigoUsuario", usuario.CodigoUsuario);
+                    cmd.Parameters.AddWithValue("@contrasnaUsuario", usuario.ContrasenaUsuario);
+                    cmd.Parameters.Add("@ExisteUsuario", SqlDbType.Char, 500);
+                    cmd.Parameters["@ExisteUsuario"].Direction = ParameterDirection.Output;
+                    cmd.ExecuteNonQuery();
+                    conexionExitosa = bool.Parse(cmd.Parameters["@ExisteUsuario"].Value.ToString());
 
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
 
                 conexionExitosa = false;
@@ -36,7 +42,7 @@ namespace WcfTelcoServices.Persistencia
 
             return conexionExitosa;
         }
-        public Usuario ObtenerUsuario(string codigoalumno)
+        public Usuario ObtenerUsuario(string codigoUsuario)
         {
             Usuario _alumno = null;
             using (SqlConnection connection = new SqlConnection(conecsql))
@@ -44,7 +50,7 @@ namespace WcfTelcoServices.Persistencia
                 connection.Open();
                 SqlCommand command = new SqlCommand("usp_obtenerUsuario", connection);
                 command.CommandType = CommandType.StoredProcedure;
-                command.Parameters.AddWithValue("@codigoalumno", codigoalumno);
+                command.Parameters.AddWithValue("@codigoUsuario", codigoUsuario);
 
                 SqlDataReader sqlData = command.ExecuteReader();
 
@@ -56,7 +62,9 @@ namespace WcfTelcoServices.Persistencia
                         {
                             CodigoUsuario = sqlData["CodigoUsuario"].ToString(),
                             NombreUsuario = sqlData["NombreUsuario"].ToString(),
-                            ContrasenaUsuario = sqlData["ContrasenaUsuario"].ToString(),
+                            Intentos = int.Parse(sqlData["intentos"].ToString()),
+                            Estado = sqlData["Estado"].ToString(),
+                            //ContrasenaUsuario = sqlData["ContrasenaUsuario"].ToString(),
                         };
                     }
                 }
@@ -65,5 +73,24 @@ namespace WcfTelcoServices.Persistencia
             return _alumno;
         }
 
+        public string ActualizarUsuario(Usuario usuario)
+        {
+            string response = string.Empty;
+            using (SqlConnection cn = new SqlConnection(conecsql))
+            {
+                cn.Open();
+                SqlCommand cmd = new SqlCommand("usp_actualizarUsuario", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@usuario", usuario.CodigoUsuario);
+                cmd.Parameters.AddWithValue("@nombreUsuario", usuario.NombreUsuario);
+                cmd.Parameters.AddWithValue("@contrasenaUsuario", usuario.ContrasenaUsuario);
+                cmd.Parameters.AddWithValue("@intentos", usuario.ContrasenaUsuario);
+                cmd.Parameters.AddWithValue("@Estado", usuario.Estado);
+                cmd.Parameters["@Mensaje"].Direction = ParameterDirection.Output;
+                cmd.ExecuteNonQuery();
+                response = cmd.Parameters["@Mensaje"].Value.ToString();
+            }
+            return response;
+        }
     }
 }
