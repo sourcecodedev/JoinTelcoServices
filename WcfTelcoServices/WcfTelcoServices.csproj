@@ -64,28 +64,30 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="UsuarioServices.svc" />
+    <Content Include="JoinTelcoServices.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dominio\Cliente.cs" />
+    <Compile Include="Dominio\ContratoCliente.cs" />
     <Compile Include="Dominio\Plan_Servicio.cs" />
     <Compile Include="Dominio\Usuario.cs" />
+    <Compile Include="IJoinTelcoServices.cs" />
+    <Compile Include="JoinTelcoServices.svc.cs">
+      <DependentUpon>JoinTelcoServices.svc</DependentUpon>
+    </Compile>
     <Compile Include="Persistencia\ClienteDao.cs" />
+    <Compile Include="Persistencia\ContratoClienteDao.cs" />
     <Compile Include="Persistencia\Plan_ServicioDao.cs" />
     <Compile Include="Persistencia\UsuarioDao.cs" />
     <Compile Include="Utilitarios\ErroresException.cs" />
-    <Compile Include="Utilitarios\Response.cs" />
-    <Compile Include="UsuarioServices.svc.cs">
-      <DependentUpon>UsuarioServices.svc</DependentUpon>
-    </Compile>
-    <Compile Include="IUsuarioServices.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dominio\Response.cs" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

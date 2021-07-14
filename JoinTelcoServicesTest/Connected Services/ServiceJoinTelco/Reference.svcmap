@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ce2b1036-6f43-40a7-a762-971df53bd607" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:56288/JoinTelcoServices.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="JoinTelcoServices.wsdl" MetadataType="Wsdl" ID="2287077a-e631-4b2f-989b-5a3c1fcd1033" SourceId="1" SourceUrl="http://localhost:56288/JoinTelcoServices.svc?wsdl" />
+    <MetadataFile FileName="JoinTelcoServices2.xsd" MetadataType="Schema" ID="4e19afb1-a8aa-482e-b3f7-169df07b83c8" SourceId="1" SourceUrl="http://localhost:56288/JoinTelcoServices.svc?xsd=xsd0" />
+    <MetadataFile FileName="JoinTelcoServices.disco" MetadataType="Disco" ID="66ee52be-fab9-449f-826d-ffccbeb39eb1" SourceId="1" SourceUrl="http://localhost:56288/JoinTelcoServices.svc?disco" />
+    <MetadataFile FileName="JoinTelcoServices3.xsd" MetadataType="Schema" ID="a663b8af-84f3-47a8-9e3a-11eb780c2f32" SourceId="1" SourceUrl="http://localhost:56288/JoinTelcoServices.svc?xsd=xsd1" />
+    <MetadataFile FileName="JoinTelcoServices1.xsd" MetadataType="Schema" ID="128be25a-3b38-4545-8333-3c83aa048f5c" SourceId="1" SourceUrl="http://localhost:56288/JoinTelcoServices.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -25,7 +25,7 @@ namespace WcfTelcoServices.Persistencia
                     cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@codigoUsuario", usuario.CodigoUsuario);
                     cmd.Parameters.AddWithValue("@contrasnaUsuario", usuario.ContrasenaUsuario);
-                    cmd.Parameters.Add("@ExisteUsuario", SqlDbType.Char, 500);
+                    cmd.Parameters.Add("@ExisteUsuario", SqlDbType.Bit);
                     cmd.Parameters["@ExisteUsuario"].Direction = ParameterDirection.Output;
                     cmd.ExecuteNonQuery();
                     conexionExitosa = bool.Parse(cmd.Parameters["@ExisteUsuario"].Value.ToString());
@@ -84,8 +84,9 @@ namespace WcfTelcoServices.Persistencia
                 cmd.Parameters.AddWithValue("@usuario", usuario.CodigoUsuario);
                 cmd.Parameters.AddWithValue("@nombreUsuario", usuario.NombreUsuario);
                 cmd.Parameters.AddWithValue("@contrasenaUsuario", usuario.ContrasenaUsuario);
-                cmd.Parameters.AddWithValue("@intentos", usuario.ContrasenaUsuario);
+                cmd.Parameters.AddWithValue("@intentos", usuario.Intentos);
                 cmd.Parameters.AddWithValue("@Estado", usuario.Estado);
+                cmd.Parameters.Add("@Mensaje", SqlDbType.Char, 500);
                 cmd.Parameters["@Mensaje"].Direction = ParameterDirection.Output;
                 cmd.ExecuteNonQuery();
                 response = cmd.Parameters["@Mensaje"].Value.ToString();

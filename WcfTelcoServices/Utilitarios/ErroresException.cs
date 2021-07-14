@@ -8,6 +8,6 @@ namespace WcfTelcoServices.Utilitarios
         [DataMember()]
         public int Codigo { get; set; }
         [DataMember()]
-        public string Descripcionk { get; set; }
+        public string Descripcion { get; set; }
     }
 }

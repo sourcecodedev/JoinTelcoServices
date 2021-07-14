@@ -8,19 +8,32 @@ namespace WebJoinTelco.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult ViewPlanes()
+        public ActionResult ConsultarDeudas()
         {
             return View();
         }
 
-        public ActionResult RegisterPlanes()
+        public ActionResult DeleteContratoCliente()
         {
             ViewBag.Message = "Your application description page.";
 
             return View();
         }
 
-        public ActionResult ConsultarDeudas()
+        public ActionResult ModificarContratoCliente()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+
+        public ActionResult RegistarContratoCliente()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+        public ActionResult ListarContratoClientes()
         {
             ViewBag.Message = "Your contact page.";
 

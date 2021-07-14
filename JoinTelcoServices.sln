@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfTelcoServices", "WcfTelcoServices\WcfTelcoServices.csproj", "{DBDE89DA-430F-4990-8FD5-F9EEF6ACBF26}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoinTelcoServicesTest", "JoinTelcoServicesTest\JoinTelcoServicesTest.csproj", "{1ED12C1D-5AA8-4630-ACAB-B3F8A079468C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DBDE89DA-430F-4990-8FD5-F9EEF6ACBF26} = {DBDE89DA-430F-4990-8FD5-F9EEF6ACBF26}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebJoinTelco", "WebJoinTelco\WebJoinTelco.csproj", "{B6ECF768-D45A-4570-A237-1CBA06C78010}"
 EndProject

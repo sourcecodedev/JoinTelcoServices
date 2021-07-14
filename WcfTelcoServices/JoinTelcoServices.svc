@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="WcfTelcoServices.JoinTelcoServices" CodeBehind="JoinTelcoServices.svc.cs" %>

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="JoinTelcoServices" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:56288/JoinTelcoServices.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:56288/JoinTelcoServices.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" />
+      <xsd:import schemaLocation="http://localhost:56288/JoinTelcoServices.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IJoinTelcoServices_RegistrarCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarCliente" />
+  </wsdl:message>
+  <wsdl:message name="IJoinTelcoServices_RegistrarCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJoinTelcoServices_RegistrarCliente_Plan_ServicioFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" name="detail" element="q1:Plan_Servicio" />
+  </wsdl:message>
+  <wsdl:message name="IJoinTelcoServices_ObtenerCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerCliente" />
+  </wsdl:message>
+  <wsdl:message name="IJoinTelcoServices_ObtenerCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJoinTelcoServices_ModificarCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarCliente" />
+  </wsdl:message>
+  <wsdl:message name="IJoinTelcoServices_ModificarCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJoinTelcoServices_EliminarCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarCliente" />
+  </wsdl:message>
+  <wsdl:message name="IJoinTelcoServices_EliminarCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJoinTelcoServices_ListarCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarCliente" />
+  </wsdl:message>
+  <wsdl:message name="IJoinTelcoServices_ListarCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJoinTelcoServices_RegistrarContratoCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarContratoCliente" />
+  </wsdl:message>
+  <wsdl:message name="IJoinTelcoServices_RegistrarContratoCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegistrarContratoClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJoinTelcoServices_ObtenerContratoCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerContratoCliente" />
+  </wsdl:message>
+  <wsdl:message name="IJoinTelcoServices_ObtenerContratoCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerContratoClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJoinTelcoServices_ModificarContratoCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarContratoCliente" />
+  </wsdl:message>
+  <wsdl:message name="IJoinTelcoServices_ModificarContratoCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarContratoClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJoinTelcoServices_EliminarContratoCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarContratoCliente" />
+  </wsdl:message>
+  <wsdl:message name="IJoinTelcoServices_EliminarContratoCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarContratoClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJoinTelcoServices_ListarContratoCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarContratoCliente" />
+  </wsdl:message>
+  <wsdl:message name="IJoinTelcoServices_ListarContratoCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarContratoClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJoinTelcoServices_ObtenerPlanServiciobyId_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPlanServiciobyId" />
+  </wsdl:message>
+  <wsdl:message name="IJoinTelcoServices_ObtenerPlanServiciobyId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPlanServiciobyIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJoinTelcoServices_ObtenerPlanServicios_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPlanServicios" />
+  </wsdl:message>
+  <wsdl:message name="IJoinTelcoServices_ObtenerPlanServicios_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPlanServiciosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJoinTelcoServices_ValidarConexion_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarConexion" />
+  </wsdl:message>
+  <wsdl:message name="IJoinTelcoServices_ValidarConexion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarConexionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJoinTelcoServices_ObtenerUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IJoinTelcoServices_ObtenerUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IJoinTelcoServices_ActualizarUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IJoinTelcoServices_ActualizarUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ActualizarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IJoinTelcoServices">
+    <wsdl:operation name="RegistrarCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IJoinTelcoServices/RegistrarCliente" message="tns:IJoinTelcoServices_RegistrarCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IJoinTelcoServices/RegistrarClienteResponse" message="tns:IJoinTelcoServices_RegistrarCliente_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IJoinTelcoServices/RegistrarClientePlan_ServicioFault" name="Plan_ServicioFault" message="tns:IJoinTelcoServices_RegistrarCliente_Plan_ServicioFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IJoinTelcoServices/ObtenerCliente" message="tns:IJoinTelcoServices_ObtenerCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IJoinTelcoServices/ObtenerClienteResponse" message="tns:IJoinTelcoServices_ObtenerCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificarCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IJoinTelcoServices/ModificarCliente" message="tns:IJoinTelcoServices_ModificarCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IJoinTelcoServices/ModificarClienteResponse" message="tns:IJoinTelcoServices_ModificarCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IJoinTelcoServices/EliminarCliente" message="tns:IJoinTelcoServices_EliminarCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IJoinTelcoServices/EliminarClienteResponse" message="tns:IJoinTelcoServices_EliminarCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IJoinTelcoServices/ListarCliente" message="tns:IJoinTelcoServices_ListarCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IJoinTelcoServices/ListarClienteResponse" message="tns:IJoinTelcoServices_ListarCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarContratoCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IJoinTelcoServices/RegistrarContratoCliente" message="tns:IJoinTelcoServices_RegistrarContratoCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IJoinTelcoServices/RegistrarContratoClienteResponse" message="tns:IJoinTelcoServices_RegistrarContratoCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerContratoCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IJoinTelcoServices/ObtenerContratoCliente" message="tns:IJoinTelcoServices_ObtenerContratoCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IJoinTelcoServices/ObtenerContratoClienteResponse" message="tns:IJoinTelcoServices_ObtenerContratoCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificarContratoCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IJoinTelcoServices/ModificarContratoCliente" message="tns:IJoinTelcoServices_ModificarContratoCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IJoinTelcoServices/ModificarContratoClienteResponse" message="tns:IJoinTelcoServices_ModificarContratoCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarContratoCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IJoinTelcoServices/EliminarContratoCliente" message="tns:IJoinTelcoServices_EliminarContratoCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IJoinTelcoServices/EliminarContratoClienteResponse" message="tns:IJoinTelcoServices_EliminarContratoCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarContratoCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IJoinTelcoServices/ListarContratoCliente" message="tns:IJoinTelcoServices_ListarContratoCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IJoinTelcoServices/ListarContratoClienteResponse" message="tns:IJoinTelcoServices_ListarContratoCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPlanServiciobyId">
+      <wsdl:input wsaw:Action="http://tempuri.org/IJoinTelcoServices/ObtenerPlanServiciobyId" message="tns:IJoinTelcoServices_ObtenerPlanServiciobyId_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IJoinTelcoServices/ObtenerPlanServiciobyIdResponse" message="tns:IJoinTelcoServices_ObtenerPlanServiciobyId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPlanServicios">
+      <wsdl:input wsaw:Action="http://tempuri.org/IJoinTelcoServices/ObtenerPlanServicios" message="tns:IJoinTelcoServices_ObtenerPlanServicios_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IJoinTelcoServices/ObtenerPlanServiciosResponse" message="tns:IJoinTelcoServices_ObtenerPlanServicios_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidarConexion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IJoinTelcoServices/ValidarConexion" message="tns:IJoinTelcoServices_ValidarConexion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IJoinTelcoServices/ValidarConexionResponse" message="tns:IJoinTelcoServices_ValidarConexion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IJoinTelcoServices/ObtenerUsuario" message="tns:IJoinTelcoServices_ObtenerUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IJoinTelcoServices/ObtenerUsuarioResponse" message="tns:IJoinTelcoServices_ObtenerUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IJoinTelcoServices/ActualizarUsuario" message="tns:IJoinTelcoServices_ActualizarUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IJoinTelcoServices/ActualizarUsuarioResponse" message="tns:IJoinTelcoServices_ActualizarUsuario_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IJoinTelcoServices" type="tns:IJoinTelcoServices">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RegistrarCliente">
+      <soap:operation soapAction="http://tempuri.org/IJoinTelcoServices/RegistrarCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="Plan_ServicioFault">
+        <soap:fault use="literal" name="Plan_ServicioFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCliente">
+      <soap:operation soapAction="http://tempuri.org/IJoinTelcoServices/ObtenerCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificarCliente">
+      <soap:operation soapAction="http://tempuri.org/IJoinTelcoServices/ModificarCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarCliente">
+      <soap:operation soapAction="http://tempuri.org/IJoinTelcoServices/EliminarCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarCliente">
+      <soap:operation soapAction="http://tempuri.org/IJoinTelcoServices/ListarCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarContratoCliente">
+      <soap:operation soapAction="http://tempuri.org/IJoinTelcoServices/RegistrarContratoCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerContratoCliente">
+      <soap:operation soapAction="http://tempuri.org/IJoinTelcoServices/ObtenerContratoCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificarContratoCliente">
+      <soap:operation soapAction="http://tempuri.org/IJoinTelcoServices/ModificarContratoCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarContratoCliente">
+      <soap:operation soapAction="http://tempuri.org/IJoinTelcoServices/EliminarContratoCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarContratoCliente">
+      <soap:operation soapAction="http://tempuri.org/IJoinTelcoServices/ListarContratoCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPlanServiciobyId">
+      <soap:operation soapAction="http://tempuri.org/IJoinTelcoServices/ObtenerPlanServiciobyId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPlanServicios">
+      <soap:operation soapAction="http://tempuri.org/IJoinTelcoServices/ObtenerPlanServicios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarConexion">
+      <soap:operation soapAction="http://tempuri.org/IJoinTelcoServices/ValidarConexion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerUsuario">
+      <soap:operation soapAction="http://tempuri.org/IJoinTelcoServices/ObtenerUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarUsuario">
+      <soap:operation soapAction="http://tempuri.org/IJoinTelcoServices/ActualizarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="JoinTelcoServices">
+    <wsdl:port name="BasicHttpBinding_IJoinTelcoServices" binding="tns:BasicHttpBinding_IJoinTelcoServices">
+      <soap:address location="http://localhost:56288/JoinTelcoServices.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

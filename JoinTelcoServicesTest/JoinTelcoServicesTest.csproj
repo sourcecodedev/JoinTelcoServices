@@ -47,16 +47,83 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="Connected Services\ServiceJoinTelco\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Dominio\ClienteTest.cs" />
+    <Compile Include="Dominio\ContratoClienteTest.cs" />
+    <Compile Include="Dominio\Plan_ServicioTest.cs" />
+    <Compile Include="Dominio\UsuarioTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Connected Services\ServiceJoinTelco\JoinTelcoServices.wsdl" />
+    <None Include="Connected Services\ServiceJoinTelco\JoinTelcoServices1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceJoinTelco\JoinTelcoServices2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceJoinTelco\JoinTelcoServices3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\ServiceJoinTelco\JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfArrayOfClienteNBNIoaBX.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceJoinTelco\JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfArrayOfContratoClienteNBNIoaBX.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceJoinTelco\JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfArrayOfPlan_ServicioNBNIoaBX.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceJoinTelco\JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfbooleanRvdAXEcW.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceJoinTelco\JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfClienteNBNIoaBX.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceJoinTelco\JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfContratoClienteNBNIoaBX.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceJoinTelco\JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfPlan_ServicioNBNIoaBX.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceJoinTelco\JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfstringRvdAXEcW.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceJoinTelco\JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfUsuarioNBNIoaBX.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServiceJoinTelco\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceJoinTelco\JoinTelcoServices.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceJoinTelco\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceJoinTelco\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Connected Services\ServiceJoinTelco\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
