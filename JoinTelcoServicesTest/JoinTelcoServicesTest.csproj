@@ -75,31 +75,31 @@
     <None Include="Connected Services\ServiceJoinTelco\JoinTelcoServices3.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Connected Services\ServiceJoinTelco\JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfArrayOfClienteNBNIoaBX.datasource">
+    <None Include="Connected Services\ServiceJoinTelco\JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfArrayOfClienteyy3A9QwE.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceJoinTelco\JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfArrayOfContratoClienteNBNIoaBX.datasource">
+    <None Include="Connected Services\ServiceJoinTelco\JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfArrayOfContratoClienteyy3A9QwE.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceJoinTelco\JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfArrayOfPlan_ServicioNBNIoaBX.datasource">
+    <None Include="Connected Services\ServiceJoinTelco\JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfArrayOfPlan_Servicioyy3A9QwE.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceJoinTelco\JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfbooleanRvdAXEcW.datasource">
+    <None Include="Connected Services\ServiceJoinTelco\JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfboolean.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceJoinTelco\JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfClienteNBNIoaBX.datasource">
+    <None Include="Connected Services\ServiceJoinTelco\JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfClienteyy3A9QwE.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceJoinTelco\JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfContratoClienteNBNIoaBX.datasource">
+    <None Include="Connected Services\ServiceJoinTelco\JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfContratoClienteyy3A9QwE.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceJoinTelco\JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfPlan_ServicioNBNIoaBX.datasource">
+    <None Include="Connected Services\ServiceJoinTelco\JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfPlan_Servicioyy3A9QwE.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceJoinTelco\JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfstringRvdAXEcW.datasource">
+    <None Include="Connected Services\ServiceJoinTelco\JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfstring.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\ServiceJoinTelco\JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfUsuarioNBNIoaBX.datasource">
+    <None Include="Connected Services\ServiceJoinTelco\JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfUsuarioyy3A9QwE.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="packages.config" />

@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using System.ServiceModel;
 using WcfTelcoServices.Dominio;
 using WcfTelcoServices.Persistencia;
-using WcfTelcoServices.Utilitarios;
-using static WcfTelcoServices.Dominio.Response;
+ 
 
 namespace WcfTelcoServices
 {

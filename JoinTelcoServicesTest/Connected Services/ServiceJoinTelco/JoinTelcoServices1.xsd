@@ -10,11 +10,11 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Cliente" nillable="true" type="tns:Cliente" />
-  <xs:complexType name="Response.RecordResponseObjectOfClienteNBNIoaBX">
+  <xs:complexType name="RecordResponseObjectOfClienteyy3A9QwE">
     <xs:annotation>
       <xs:appinfo>
-        <GenericType Name="Response.RecordResponseObjectOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
-          <GenericParameter Name="Cliente" Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" NestedLevel="1" />
+        <GenericType Name="RecordResponseObjectOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Cliente" Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" />
         </GenericType>
       </xs:appinfo>
     </xs:annotation>
@@ -24,21 +24,19 @@
       <xs:element minOccurs="0" name="success" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="Response.RecordResponseObjectOfClienteNBNIoaBX" nillable="true" type="tns:Response.RecordResponseObjectOfClienteNBNIoaBX" />
-  <xs:complexType name="Plan_Servicio">
+  <xs:element name="RecordResponseObjectOfClienteyy3A9QwE" nillable="true" type="tns:RecordResponseObjectOfClienteyy3A9QwE" />
+  <xs:complexType name="ErroresException">
     <xs:sequence>
-      <xs:element minOccurs="0" name="Plan_ServicioId" type="xs:int" />
-      <xs:element minOccurs="0" name="descripcion" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="nombre_servicio" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="precio_servicio" type="xs:double" />
+      <xs:element minOccurs="0" name="Codigo" type="xs:int" />
+      <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="Plan_Servicio" nillable="true" type="tns:Plan_Servicio" />
-  <xs:complexType name="Response.RecordResponseObjectOfstringRvdAXEcW">
+  <xs:element name="ErroresException" nillable="true" type="tns:ErroresException" />
+  <xs:complexType name="RecordResponseObjectOfstring">
     <xs:annotation>
       <xs:appinfo>
-        <GenericType Name="Response.RecordResponseObjectOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
-          <GenericParameter Name="string" Namespace="http://www.w3.org/2001/XMLSchema" NestedLevel="1" />
+        <GenericType Name="RecordResponseObjectOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="string" Namespace="http://www.w3.org/2001/XMLSchema" />
         </GenericType>
       </xs:appinfo>
     </xs:annotation>
@@ -48,12 +46,12 @@
       <xs:element minOccurs="0" name="success" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="Response.RecordResponseObjectOfstringRvdAXEcW" nillable="true" type="tns:Response.RecordResponseObjectOfstringRvdAXEcW" />
-  <xs:complexType name="Response.RecordResponseObjectOfArrayOfClienteNBNIoaBX">
+  <xs:element name="RecordResponseObjectOfstring" nillable="true" type="tns:RecordResponseObjectOfstring" />
+  <xs:complexType name="RecordResponseObjectOfArrayOfClienteyy3A9QwE">
     <xs:annotation>
       <xs:appinfo>
-        <GenericType Name="Response.RecordResponseObjectOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
-          <GenericParameter Name="ArrayOfCliente" Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" NestedLevel="1" />
+        <GenericType Name="RecordResponseObjectOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfCliente" Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" />
         </GenericType>
       </xs:appinfo>
     </xs:annotation>
@@ -63,7 +61,7 @@
       <xs:element minOccurs="0" name="success" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="Response.RecordResponseObjectOfArrayOfClienteNBNIoaBX" nillable="true" type="tns:Response.RecordResponseObjectOfArrayOfClienteNBNIoaBX" />
+  <xs:element name="RecordResponseObjectOfArrayOfClienteyy3A9QwE" nillable="true" type="tns:RecordResponseObjectOfArrayOfClienteyy3A9QwE" />
   <xs:complexType name="ArrayOfCliente">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="Cliente" nillable="true" type="tns:Cliente" />
@@ -81,11 +79,11 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ContratoCliente" nillable="true" type="tns:ContratoCliente" />
-  <xs:complexType name="Response.RecordResponseObjectOfContratoClienteNBNIoaBX">
+  <xs:complexType name="RecordResponseObjectOfContratoClienteyy3A9QwE">
     <xs:annotation>
       <xs:appinfo>
-        <GenericType Name="Response.RecordResponseObjectOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
-          <GenericParameter Name="ContratoCliente" Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" NestedLevel="1" />
+        <GenericType Name="RecordResponseObjectOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ContratoCliente" Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" />
         </GenericType>
       </xs:appinfo>
     </xs:annotation>
@@ -95,12 +93,12 @@
       <xs:element minOccurs="0" name="success" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="Response.RecordResponseObjectOfContratoClienteNBNIoaBX" nillable="true" type="tns:Response.RecordResponseObjectOfContratoClienteNBNIoaBX" />
-  <xs:complexType name="Response.RecordResponseObjectOfArrayOfContratoClienteNBNIoaBX">
+  <xs:element name="RecordResponseObjectOfContratoClienteyy3A9QwE" nillable="true" type="tns:RecordResponseObjectOfContratoClienteyy3A9QwE" />
+  <xs:complexType name="RecordResponseObjectOfArrayOfContratoClienteyy3A9QwE">
     <xs:annotation>
       <xs:appinfo>
-        <GenericType Name="Response.RecordResponseObjectOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
-          <GenericParameter Name="ArrayOfContratoCliente" Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" NestedLevel="1" />
+        <GenericType Name="RecordResponseObjectOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfContratoCliente" Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" />
         </GenericType>
       </xs:appinfo>
     </xs:annotation>
@@ -110,18 +108,18 @@
       <xs:element minOccurs="0" name="success" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="Response.RecordResponseObjectOfArrayOfContratoClienteNBNIoaBX" nillable="true" type="tns:Response.RecordResponseObjectOfArrayOfContratoClienteNBNIoaBX" />
+  <xs:element name="RecordResponseObjectOfArrayOfContratoClienteyy3A9QwE" nillable="true" type="tns:RecordResponseObjectOfArrayOfContratoClienteyy3A9QwE" />
   <xs:complexType name="ArrayOfContratoCliente">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="ContratoCliente" nillable="true" type="tns:ContratoCliente" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ArrayOfContratoCliente" nillable="true" type="tns:ArrayOfContratoCliente" />
-  <xs:complexType name="Response.RecordResponseObjectOfPlan_ServicioNBNIoaBX">
+  <xs:complexType name="RecordResponseObjectOfPlan_Servicioyy3A9QwE">
     <xs:annotation>
       <xs:appinfo>
-        <GenericType Name="Response.RecordResponseObjectOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
-          <GenericParameter Name="Plan_Servicio" Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" NestedLevel="1" />
+        <GenericType Name="RecordResponseObjectOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Plan_Servicio" Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" />
         </GenericType>
       </xs:appinfo>
     </xs:annotation>
@@ -131,12 +129,21 @@
       <xs:element minOccurs="0" name="success" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="Response.RecordResponseObjectOfPlan_ServicioNBNIoaBX" nillable="true" type="tns:Response.RecordResponseObjectOfPlan_ServicioNBNIoaBX" />
-  <xs:complexType name="Response.RecordResponseObjectOfArrayOfPlan_ServicioNBNIoaBX">
+  <xs:element name="RecordResponseObjectOfPlan_Servicioyy3A9QwE" nillable="true" type="tns:RecordResponseObjectOfPlan_Servicioyy3A9QwE" />
+  <xs:complexType name="Plan_Servicio">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Plan_ServicioId" type="xs:int" />
+      <xs:element minOccurs="0" name="descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre_servicio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="precio_servicio" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Plan_Servicio" nillable="true" type="tns:Plan_Servicio" />
+  <xs:complexType name="RecordResponseObjectOfArrayOfPlan_Servicioyy3A9QwE">
     <xs:annotation>
       <xs:appinfo>
-        <GenericType Name="Response.RecordResponseObjectOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
-          <GenericParameter Name="ArrayOfPlan_Servicio" Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" NestedLevel="1" />
+        <GenericType Name="RecordResponseObjectOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfPlan_Servicio" Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" />
         </GenericType>
       </xs:appinfo>
     </xs:annotation>
@@ -146,7 +153,7 @@
       <xs:element minOccurs="0" name="success" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="Response.RecordResponseObjectOfArrayOfPlan_ServicioNBNIoaBX" nillable="true" type="tns:Response.RecordResponseObjectOfArrayOfPlan_ServicioNBNIoaBX" />
+  <xs:element name="RecordResponseObjectOfArrayOfPlan_Servicioyy3A9QwE" nillable="true" type="tns:RecordResponseObjectOfArrayOfPlan_Servicioyy3A9QwE" />
   <xs:complexType name="ArrayOfPlan_Servicio">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="Plan_Servicio" nillable="true" type="tns:Plan_Servicio" />
@@ -164,11 +171,11 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="Usuario" nillable="true" type="tns:Usuario" />
-  <xs:complexType name="Response.RecordResponseObjectOfbooleanRvdAXEcW">
+  <xs:complexType name="RecordResponseObjectOfboolean">
     <xs:annotation>
       <xs:appinfo>
-        <GenericType Name="Response.RecordResponseObjectOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
-          <GenericParameter Name="boolean" Namespace="http://www.w3.org/2001/XMLSchema" NestedLevel="1" />
+        <GenericType Name="RecordResponseObjectOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="boolean" Namespace="http://www.w3.org/2001/XMLSchema" />
         </GenericType>
       </xs:appinfo>
     </xs:annotation>
@@ -178,12 +185,12 @@
       <xs:element minOccurs="0" name="success" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="Response.RecordResponseObjectOfbooleanRvdAXEcW" nillable="true" type="tns:Response.RecordResponseObjectOfbooleanRvdAXEcW" />
-  <xs:complexType name="Response.RecordResponseObjectOfUsuarioNBNIoaBX">
+  <xs:element name="RecordResponseObjectOfboolean" nillable="true" type="tns:RecordResponseObjectOfboolean" />
+  <xs:complexType name="RecordResponseObjectOfUsuarioyy3A9QwE">
     <xs:annotation>
       <xs:appinfo>
-        <GenericType Name="Response.RecordResponseObjectOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
-          <GenericParameter Name="Usuario" Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" NestedLevel="1" />
+        <GenericType Name="RecordResponseObjectOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="Usuario" Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" />
         </GenericType>
       </xs:appinfo>
     </xs:annotation>
@@ -193,5 +200,5 @@
       <xs:element minOccurs="0" name="success" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="Response.RecordResponseObjectOfUsuarioNBNIoaBX" nillable="true" type="tns:Response.RecordResponseObjectOfUsuarioNBNIoaBX" />
+  <xs:element name="RecordResponseObjectOfUsuarioyy3A9QwE" nillable="true" type="tns:RecordResponseObjectOfUsuarioyy3A9QwE" />
 </xs:schema>

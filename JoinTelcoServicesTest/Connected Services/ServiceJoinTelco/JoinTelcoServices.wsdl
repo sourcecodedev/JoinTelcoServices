@@ -13,8 +13,8 @@
   <wsdl:message name="IJoinTelcoServices_RegistrarCliente_OutputMessage">
     <wsdl:part name="parameters" element="tns:RegistrarClienteResponse" />
   </wsdl:message>
-  <wsdl:message name="IJoinTelcoServices_RegistrarCliente_Plan_ServicioFault_FaultMessage">
-    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" name="detail" element="q1:Plan_Servicio" />
+  <wsdl:message name="IJoinTelcoServices_RegistrarCliente_ErroresExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" name="detail" element="q1:ErroresException" />
   </wsdl:message>
   <wsdl:message name="IJoinTelcoServices_ObtenerCliente_InputMessage">
     <wsdl:part name="parameters" element="tns:ObtenerCliente" />
@@ -94,6 +94,9 @@
   <wsdl:message name="IJoinTelcoServices_ObtenerUsuario_OutputMessage">
     <wsdl:part name="parameters" element="tns:ObtenerUsuarioResponse" />
   </wsdl:message>
+  <wsdl:message name="IJoinTelcoServices_ObtenerUsuario_ErroresExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio" name="detail" element="q2:ErroresException" />
+  </wsdl:message>
   <wsdl:message name="IJoinTelcoServices_ActualizarUsuario_InputMessage">
     <wsdl:part name="parameters" element="tns:ActualizarUsuario" />
   </wsdl:message>
@@ -104,7 +107,7 @@
     <wsdl:operation name="RegistrarCliente">
       <wsdl:input wsaw:Action="http://tempuri.org/IJoinTelcoServices/RegistrarCliente" message="tns:IJoinTelcoServices_RegistrarCliente_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IJoinTelcoServices/RegistrarClienteResponse" message="tns:IJoinTelcoServices_RegistrarCliente_OutputMessage" />
-      <wsdl:fault wsaw:Action="http://tempuri.org/IJoinTelcoServices/RegistrarClientePlan_ServicioFault" name="Plan_ServicioFault" message="tns:IJoinTelcoServices_RegistrarCliente_Plan_ServicioFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IJoinTelcoServices/RegistrarClienteErroresExceptionFault" name="ErroresExceptionFault" message="tns:IJoinTelcoServices_RegistrarCliente_ErroresExceptionFault_FaultMessage" />
     </wsdl:operation>
     <wsdl:operation name="ObtenerCliente">
       <wsdl:input wsaw:Action="http://tempuri.org/IJoinTelcoServices/ObtenerCliente" message="tns:IJoinTelcoServices_ObtenerCliente_InputMessage" />
@@ -157,6 +160,7 @@
     <wsdl:operation name="ObtenerUsuario">
       <wsdl:input wsaw:Action="http://tempuri.org/IJoinTelcoServices/ObtenerUsuario" message="tns:IJoinTelcoServices_ObtenerUsuario_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IJoinTelcoServices/ObtenerUsuarioResponse" message="tns:IJoinTelcoServices_ObtenerUsuario_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IJoinTelcoServices/ObtenerUsuarioErroresExceptionFault" name="ErroresExceptionFault" message="tns:IJoinTelcoServices_ObtenerUsuario_ErroresExceptionFault_FaultMessage" />
     </wsdl:operation>
     <wsdl:operation name="ActualizarUsuario">
       <wsdl:input wsaw:Action="http://tempuri.org/IJoinTelcoServices/ActualizarUsuario" message="tns:IJoinTelcoServices_ActualizarUsuario_InputMessage" />
@@ -173,8 +177,8 @@
       <wsdl:output>
         <soap:body use="literal" />
       </wsdl:output>
-      <wsdl:fault name="Plan_ServicioFault">
-        <soap:fault use="literal" name="Plan_ServicioFault" namespace="" />
+      <wsdl:fault name="ErroresExceptionFault">
+        <soap:fault use="literal" name="ErroresExceptionFault" namespace="" />
       </wsdl:fault>
     </wsdl:operation>
     <wsdl:operation name="ObtenerCliente">
@@ -293,6 +297,9 @@
       <wsdl:output>
         <soap:body use="literal" />
       </wsdl:output>
+      <wsdl:fault name="ErroresExceptionFault">
+        <soap:fault use="literal" name="ErroresExceptionFault" namespace="" />
+      </wsdl:fault>
     </wsdl:operation>
     <wsdl:operation name="ActualizarUsuario">
       <soap:operation soapAction="http://tempuri.org/IJoinTelcoServices/ActualizarUsuario" style="document" />

@@ -124,9 +124,9 @@ namespace JoinTelcoServicesTest.ServiceJoinTelco {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Response.RecordResponseObjectOfClienteNBNIoaBX", Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="RecordResponseObjectOfClienteyy3A9QwE", Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio")]
     [System.SerializableAttribute()]
-    public partial class ResponseRecordResponseObjectOfClienteNBNIoaBX : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class RecordResponseObjectOfClienteyy3A9QwE : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -201,24 +201,18 @@ namespace JoinTelcoServicesTest.ServiceJoinTelco {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Plan_Servicio", Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ErroresException", Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio")]
     [System.SerializableAttribute()]
-    public partial class Plan_Servicio : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class ErroresException : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int Plan_ServicioIdField;
+        private int CodigoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string descripcionField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string nombre_servicioField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private double precio_servicioField;
+        private string DescripcionField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -231,53 +225,27 @@ namespace JoinTelcoServicesTest.ServiceJoinTelco {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Plan_ServicioId {
+        public int Codigo {
             get {
-                return this.Plan_ServicioIdField;
+                return this.CodigoField;
             }
             set {
-                if ((this.Plan_ServicioIdField.Equals(value) != true)) {
-                    this.Plan_ServicioIdField = value;
-                    this.RaisePropertyChanged("Plan_ServicioId");
+                if ((this.CodigoField.Equals(value) != true)) {
+                    this.CodigoField = value;
+                    this.RaisePropertyChanged("Codigo");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string descripcion {
+        public string Descripcion {
             get {
-                return this.descripcionField;
+                return this.DescripcionField;
             }
             set {
-                if ((object.ReferenceEquals(this.descripcionField, value) != true)) {
-                    this.descripcionField = value;
-                    this.RaisePropertyChanged("descripcion");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string nombre_servicio {
-            get {
-                return this.nombre_servicioField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.nombre_servicioField, value) != true)) {
-                    this.nombre_servicioField = value;
-                    this.RaisePropertyChanged("nombre_servicio");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public double precio_servicio {
-            get {
-                return this.precio_servicioField;
-            }
-            set {
-                if ((this.precio_servicioField.Equals(value) != true)) {
-                    this.precio_servicioField = value;
-                    this.RaisePropertyChanged("precio_servicio");
+                if ((object.ReferenceEquals(this.DescripcionField, value) != true)) {
+                    this.DescripcionField = value;
+                    this.RaisePropertyChanged("Descripcion");
                 }
             }
         }
@@ -294,9 +262,9 @@ namespace JoinTelcoServicesTest.ServiceJoinTelco {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Response.RecordResponseObjectOfstringRvdAXEcW", Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="RecordResponseObjectOfstring", Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio")]
     [System.SerializableAttribute()]
-    public partial class ResponseRecordResponseObjectOfstringRvdAXEcW : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class RecordResponseObjectOfstring : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -371,9 +339,9 @@ namespace JoinTelcoServicesTest.ServiceJoinTelco {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Response.RecordResponseObjectOfArrayOfClienteNBNIoaBX", Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="RecordResponseObjectOfArrayOfClienteyy3A9QwE", Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio")]
     [System.SerializableAttribute()]
-    public partial class ResponseRecordResponseObjectOfArrayOfClienteNBNIoaBX : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class RecordResponseObjectOfArrayOfClienteyy3A9QwE : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -573,9 +541,9 @@ namespace JoinTelcoServicesTest.ServiceJoinTelco {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Response.RecordResponseObjectOfContratoClienteNBNIoaBX", Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="RecordResponseObjectOfContratoClienteyy3A9QwE", Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio")]
     [System.SerializableAttribute()]
-    public partial class ResponseRecordResponseObjectOfContratoClienteNBNIoaBX : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class RecordResponseObjectOfContratoClienteyy3A9QwE : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -650,9 +618,9 @@ namespace JoinTelcoServicesTest.ServiceJoinTelco {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Response.RecordResponseObjectOfArrayOfContratoClienteNBNIoaBX", Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="RecordResponseObjectOfArrayOfContratoClienteyy3A9QwE", Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio")]
     [System.SerializableAttribute()]
-    public partial class ResponseRecordResponseObjectOfArrayOfContratoClienteNBNIoaBX : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class RecordResponseObjectOfArrayOfContratoClienteyy3A9QwE : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -727,9 +695,9 @@ namespace JoinTelcoServicesTest.ServiceJoinTelco {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Response.RecordResponseObjectOfPlan_ServicioNBNIoaBX", Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="RecordResponseObjectOfPlan_Servicioyy3A9QwE", Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio")]
     [System.SerializableAttribute()]
-    public partial class ResponseRecordResponseObjectOfPlan_ServicioNBNIoaBX : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class RecordResponseObjectOfPlan_Servicioyy3A9QwE : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -804,9 +772,102 @@ namespace JoinTelcoServicesTest.ServiceJoinTelco {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Response.RecordResponseObjectOfArrayOfPlan_ServicioNBNIoaBX", Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Plan_Servicio", Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio")]
     [System.SerializableAttribute()]
-    public partial class ResponseRecordResponseObjectOfArrayOfPlan_ServicioNBNIoaBX : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class Plan_Servicio : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int Plan_ServicioIdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string descripcionField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string nombre_servicioField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private double precio_servicioField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Plan_ServicioId {
+            get {
+                return this.Plan_ServicioIdField;
+            }
+            set {
+                if ((this.Plan_ServicioIdField.Equals(value) != true)) {
+                    this.Plan_ServicioIdField = value;
+                    this.RaisePropertyChanged("Plan_ServicioId");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string descripcion {
+            get {
+                return this.descripcionField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.descripcionField, value) != true)) {
+                    this.descripcionField = value;
+                    this.RaisePropertyChanged("descripcion");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string nombre_servicio {
+            get {
+                return this.nombre_servicioField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.nombre_servicioField, value) != true)) {
+                    this.nombre_servicioField = value;
+                    this.RaisePropertyChanged("nombre_servicio");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public double precio_servicio {
+            get {
+                return this.precio_servicioField;
+            }
+            set {
+                if ((this.precio_servicioField.Equals(value) != true)) {
+                    this.precio_servicioField = value;
+                    this.RaisePropertyChanged("precio_servicio");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="RecordResponseObjectOfArrayOfPlan_Servicioyy3A9QwE", Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio")]
+    [System.SerializableAttribute()]
+    public partial class RecordResponseObjectOfArrayOfPlan_Servicioyy3A9QwE : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -1006,9 +1067,9 @@ namespace JoinTelcoServicesTest.ServiceJoinTelco {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Response.RecordResponseObjectOfbooleanRvdAXEcW", Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="RecordResponseObjectOfboolean", Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio")]
     [System.SerializableAttribute()]
-    public partial class ResponseRecordResponseObjectOfbooleanRvdAXEcW : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class RecordResponseObjectOfboolean : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -1083,9 +1144,9 @@ namespace JoinTelcoServicesTest.ServiceJoinTelco {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Response.RecordResponseObjectOfUsuarioNBNIoaBX", Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="RecordResponseObjectOfUsuarioyy3A9QwE", Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio")]
     [System.SerializableAttribute()]
-    public partial class ResponseRecordResponseObjectOfUsuarioNBNIoaBX : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class RecordResponseObjectOfUsuarioyy3A9QwE : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
@@ -1163,95 +1224,96 @@ namespace JoinTelcoServicesTest.ServiceJoinTelco {
     public interface IJoinTelcoServices {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IJoinTelcoServices/RegistrarCliente", ReplyAction="http://tempuri.org/IJoinTelcoServices/RegistrarClienteResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(JoinTelcoServicesTest.ServiceJoinTelco.Plan_Servicio), Action="http://tempuri.org/IJoinTelcoServices/RegistrarClientePlan_ServicioFault", Name="Plan_Servicio", Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio")]
-        JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfClienteNBNIoaBX RegistrarCliente(JoinTelcoServicesTest.ServiceJoinTelco.Cliente _cliente);
+        [System.ServiceModel.FaultContractAttribute(typeof(JoinTelcoServicesTest.ServiceJoinTelco.ErroresException), Action="http://tempuri.org/IJoinTelcoServices/RegistrarClienteErroresExceptionFault", Name="ErroresException", Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio")]
+        JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfClienteyy3A9QwE RegistrarCliente(JoinTelcoServicesTest.ServiceJoinTelco.Cliente _cliente);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IJoinTelcoServices/RegistrarCliente", ReplyAction="http://tempuri.org/IJoinTelcoServices/RegistrarClienteResponse")]
-        System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfClienteNBNIoaBX> RegistrarClienteAsync(JoinTelcoServicesTest.ServiceJoinTelco.Cliente _cliente);
+        System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfClienteyy3A9QwE> RegistrarClienteAsync(JoinTelcoServicesTest.ServiceJoinTelco.Cliente _cliente);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IJoinTelcoServices/ObtenerCliente", ReplyAction="http://tempuri.org/IJoinTelcoServices/ObtenerClienteResponse")]
-        JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfClienteNBNIoaBX ObtenerCliente(string Num_documento);
+        JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfClienteyy3A9QwE ObtenerCliente(string Num_documento);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IJoinTelcoServices/ObtenerCliente", ReplyAction="http://tempuri.org/IJoinTelcoServices/ObtenerClienteResponse")]
-        System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfClienteNBNIoaBX> ObtenerClienteAsync(string Num_documento);
+        System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfClienteyy3A9QwE> ObtenerClienteAsync(string Num_documento);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IJoinTelcoServices/ModificarCliente", ReplyAction="http://tempuri.org/IJoinTelcoServices/ModificarClienteResponse")]
-        JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfClienteNBNIoaBX ModificarCliente(JoinTelcoServicesTest.ServiceJoinTelco.Cliente _cliente);
+        JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfClienteyy3A9QwE ModificarCliente(JoinTelcoServicesTest.ServiceJoinTelco.Cliente _cliente);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IJoinTelcoServices/ModificarCliente", ReplyAction="http://tempuri.org/IJoinTelcoServices/ModificarClienteResponse")]
-        System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfClienteNBNIoaBX> ModificarClienteAsync(JoinTelcoServicesTest.ServiceJoinTelco.Cliente _cliente);
+        System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfClienteyy3A9QwE> ModificarClienteAsync(JoinTelcoServicesTest.ServiceJoinTelco.Cliente _cliente);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IJoinTelcoServices/EliminarCliente", ReplyAction="http://tempuri.org/IJoinTelcoServices/EliminarClienteResponse")]
-        JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfstringRvdAXEcW EliminarCliente(string Num_documento);
+        JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfstring EliminarCliente(string Num_documento);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IJoinTelcoServices/EliminarCliente", ReplyAction="http://tempuri.org/IJoinTelcoServices/EliminarClienteResponse")]
-        System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfstringRvdAXEcW> EliminarClienteAsync(string Num_documento);
+        System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfstring> EliminarClienteAsync(string Num_documento);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IJoinTelcoServices/ListarCliente", ReplyAction="http://tempuri.org/IJoinTelcoServices/ListarClienteResponse")]
-        JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfArrayOfClienteNBNIoaBX ListarCliente();
+        JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfArrayOfClienteyy3A9QwE ListarCliente();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IJoinTelcoServices/ListarCliente", ReplyAction="http://tempuri.org/IJoinTelcoServices/ListarClienteResponse")]
-        System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfArrayOfClienteNBNIoaBX> ListarClienteAsync();
+        System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfArrayOfClienteyy3A9QwE> ListarClienteAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IJoinTelcoServices/RegistrarContratoCliente", ReplyAction="http://tempuri.org/IJoinTelcoServices/RegistrarContratoClienteResponse")]
-        JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfContratoClienteNBNIoaBX RegistrarContratoCliente(JoinTelcoServicesTest.ServiceJoinTelco.ContratoCliente contratoCliente);
+        JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfContratoClienteyy3A9QwE RegistrarContratoCliente(JoinTelcoServicesTest.ServiceJoinTelco.ContratoCliente contratoCliente);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IJoinTelcoServices/RegistrarContratoCliente", ReplyAction="http://tempuri.org/IJoinTelcoServices/RegistrarContratoClienteResponse")]
-        System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfContratoClienteNBNIoaBX> RegistrarContratoClienteAsync(JoinTelcoServicesTest.ServiceJoinTelco.ContratoCliente contratoCliente);
+        System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfContratoClienteyy3A9QwE> RegistrarContratoClienteAsync(JoinTelcoServicesTest.ServiceJoinTelco.ContratoCliente contratoCliente);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IJoinTelcoServices/ObtenerContratoCliente", ReplyAction="http://tempuri.org/IJoinTelcoServices/ObtenerContratoClienteResponse")]
-        JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfContratoClienteNBNIoaBX ObtenerContratoCliente(string ContratoClienteId);
+        JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfContratoClienteyy3A9QwE ObtenerContratoCliente(string ContratoClienteId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IJoinTelcoServices/ObtenerContratoCliente", ReplyAction="http://tempuri.org/IJoinTelcoServices/ObtenerContratoClienteResponse")]
-        System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfContratoClienteNBNIoaBX> ObtenerContratoClienteAsync(string ContratoClienteId);
+        System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfContratoClienteyy3A9QwE> ObtenerContratoClienteAsync(string ContratoClienteId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IJoinTelcoServices/ModificarContratoCliente", ReplyAction="http://tempuri.org/IJoinTelcoServices/ModificarContratoClienteResponse")]
-        JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfContratoClienteNBNIoaBX ModificarContratoCliente(JoinTelcoServicesTest.ServiceJoinTelco.ContratoCliente contratoCliente);
+        JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfContratoClienteyy3A9QwE ModificarContratoCliente(JoinTelcoServicesTest.ServiceJoinTelco.ContratoCliente contratoCliente);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IJoinTelcoServices/ModificarContratoCliente", ReplyAction="http://tempuri.org/IJoinTelcoServices/ModificarContratoClienteResponse")]
-        System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfContratoClienteNBNIoaBX> ModificarContratoClienteAsync(JoinTelcoServicesTest.ServiceJoinTelco.ContratoCliente contratoCliente);
+        System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfContratoClienteyy3A9QwE> ModificarContratoClienteAsync(JoinTelcoServicesTest.ServiceJoinTelco.ContratoCliente contratoCliente);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IJoinTelcoServices/EliminarContratoCliente", ReplyAction="http://tempuri.org/IJoinTelcoServices/EliminarContratoClienteResponse")]
-        JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfstringRvdAXEcW EliminarContratoCliente(string ContratoClienteId);
+        JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfstring EliminarContratoCliente(string ContratoClienteId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IJoinTelcoServices/EliminarContratoCliente", ReplyAction="http://tempuri.org/IJoinTelcoServices/EliminarContratoClienteResponse")]
-        System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfstringRvdAXEcW> EliminarContratoClienteAsync(string ContratoClienteId);
+        System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfstring> EliminarContratoClienteAsync(string ContratoClienteId);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IJoinTelcoServices/ListarContratoCliente", ReplyAction="http://tempuri.org/IJoinTelcoServices/ListarContratoClienteResponse")]
-        JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfArrayOfContratoClienteNBNIoaBX ListarContratoCliente();
+        JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfArrayOfContratoClienteyy3A9QwE ListarContratoCliente();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IJoinTelcoServices/ListarContratoCliente", ReplyAction="http://tempuri.org/IJoinTelcoServices/ListarContratoClienteResponse")]
-        System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfArrayOfContratoClienteNBNIoaBX> ListarContratoClienteAsync();
+        System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfArrayOfContratoClienteyy3A9QwE> ListarContratoClienteAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IJoinTelcoServices/ObtenerPlanServiciobyId", ReplyAction="http://tempuri.org/IJoinTelcoServices/ObtenerPlanServiciobyIdResponse")]
-        JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfPlan_ServicioNBNIoaBX ObtenerPlanServiciobyId(int codigoPlanServicio);
+        JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfPlan_Servicioyy3A9QwE ObtenerPlanServiciobyId(int codigoPlanServicio);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IJoinTelcoServices/ObtenerPlanServiciobyId", ReplyAction="http://tempuri.org/IJoinTelcoServices/ObtenerPlanServiciobyIdResponse")]
-        System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfPlan_ServicioNBNIoaBX> ObtenerPlanServiciobyIdAsync(int codigoPlanServicio);
+        System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfPlan_Servicioyy3A9QwE> ObtenerPlanServiciobyIdAsync(int codigoPlanServicio);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IJoinTelcoServices/ObtenerPlanServicios", ReplyAction="http://tempuri.org/IJoinTelcoServices/ObtenerPlanServiciosResponse")]
-        JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfArrayOfPlan_ServicioNBNIoaBX ObtenerPlanServicios();
+        JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfArrayOfPlan_Servicioyy3A9QwE ObtenerPlanServicios();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IJoinTelcoServices/ObtenerPlanServicios", ReplyAction="http://tempuri.org/IJoinTelcoServices/ObtenerPlanServiciosResponse")]
-        System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfArrayOfPlan_ServicioNBNIoaBX> ObtenerPlanServiciosAsync();
+        System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfArrayOfPlan_Servicioyy3A9QwE> ObtenerPlanServiciosAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IJoinTelcoServices/ValidarConexion", ReplyAction="http://tempuri.org/IJoinTelcoServices/ValidarConexionResponse")]
-        JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfbooleanRvdAXEcW ValidarConexion(JoinTelcoServicesTest.ServiceJoinTelco.Usuario usuario);
+        JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfboolean ValidarConexion(JoinTelcoServicesTest.ServiceJoinTelco.Usuario usuario);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IJoinTelcoServices/ValidarConexion", ReplyAction="http://tempuri.org/IJoinTelcoServices/ValidarConexionResponse")]
-        System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfbooleanRvdAXEcW> ValidarConexionAsync(JoinTelcoServicesTest.ServiceJoinTelco.Usuario usuario);
+        System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfboolean> ValidarConexionAsync(JoinTelcoServicesTest.ServiceJoinTelco.Usuario usuario);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IJoinTelcoServices/ObtenerUsuario", ReplyAction="http://tempuri.org/IJoinTelcoServices/ObtenerUsuarioResponse")]
-        JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfUsuarioNBNIoaBX ObtenerUsuario(string codigoUsuario);
+        [System.ServiceModel.FaultContractAttribute(typeof(JoinTelcoServicesTest.ServiceJoinTelco.ErroresException), Action="http://tempuri.org/IJoinTelcoServices/ObtenerUsuarioErroresExceptionFault", Name="ErroresException", Namespace="http://schemas.datacontract.org/2004/07/WcfTelcoServices.Dominio")]
+        JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfUsuarioyy3A9QwE ObtenerUsuario(string codigoUsuario);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IJoinTelcoServices/ObtenerUsuario", ReplyAction="http://tempuri.org/IJoinTelcoServices/ObtenerUsuarioResponse")]
-        System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfUsuarioNBNIoaBX> ObtenerUsuarioAsync(string codigoUsuario);
+        System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfUsuarioyy3A9QwE> ObtenerUsuarioAsync(string codigoUsuario);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IJoinTelcoServices/ActualizarUsuario", ReplyAction="http://tempuri.org/IJoinTelcoServices/ActualizarUsuarioResponse")]
-        JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfUsuarioNBNIoaBX ActualizarUsuario(JoinTelcoServicesTest.ServiceJoinTelco.Usuario usuario);
+        JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfUsuarioyy3A9QwE ActualizarUsuario(JoinTelcoServicesTest.ServiceJoinTelco.Usuario usuario);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IJoinTelcoServices/ActualizarUsuario", ReplyAction="http://tempuri.org/IJoinTelcoServices/ActualizarUsuarioResponse")]
-        System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfUsuarioNBNIoaBX> ActualizarUsuarioAsync(JoinTelcoServicesTest.ServiceJoinTelco.Usuario usuario);
+        System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfUsuarioyy3A9QwE> ActualizarUsuarioAsync(JoinTelcoServicesTest.ServiceJoinTelco.Usuario usuario);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -1281,123 +1343,123 @@ namespace JoinTelcoServicesTest.ServiceJoinTelco {
                 base(binding, remoteAddress) {
         }
         
-        public JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfClienteNBNIoaBX RegistrarCliente(JoinTelcoServicesTest.ServiceJoinTelco.Cliente _cliente) {
+        public JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfClienteyy3A9QwE RegistrarCliente(JoinTelcoServicesTest.ServiceJoinTelco.Cliente _cliente) {
             return base.Channel.RegistrarCliente(_cliente);
         }
         
-        public System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfClienteNBNIoaBX> RegistrarClienteAsync(JoinTelcoServicesTest.ServiceJoinTelco.Cliente _cliente) {
+        public System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfClienteyy3A9QwE> RegistrarClienteAsync(JoinTelcoServicesTest.ServiceJoinTelco.Cliente _cliente) {
             return base.Channel.RegistrarClienteAsync(_cliente);
         }
         
-        public JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfClienteNBNIoaBX ObtenerCliente(string Num_documento) {
+        public JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfClienteyy3A9QwE ObtenerCliente(string Num_documento) {
             return base.Channel.ObtenerCliente(Num_documento);
         }
         
-        public System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfClienteNBNIoaBX> ObtenerClienteAsync(string Num_documento) {
+        public System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfClienteyy3A9QwE> ObtenerClienteAsync(string Num_documento) {
             return base.Channel.ObtenerClienteAsync(Num_documento);
         }
         
-        public JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfClienteNBNIoaBX ModificarCliente(JoinTelcoServicesTest.ServiceJoinTelco.Cliente _cliente) {
+        public JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfClienteyy3A9QwE ModificarCliente(JoinTelcoServicesTest.ServiceJoinTelco.Cliente _cliente) {
             return base.Channel.ModificarCliente(_cliente);
         }
         
-        public System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfClienteNBNIoaBX> ModificarClienteAsync(JoinTelcoServicesTest.ServiceJoinTelco.Cliente _cliente) {
+        public System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfClienteyy3A9QwE> ModificarClienteAsync(JoinTelcoServicesTest.ServiceJoinTelco.Cliente _cliente) {
             return base.Channel.ModificarClienteAsync(_cliente);
         }
         
-        public JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfstringRvdAXEcW EliminarCliente(string Num_documento) {
+        public JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfstring EliminarCliente(string Num_documento) {
             return base.Channel.EliminarCliente(Num_documento);
         }
         
-        public System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfstringRvdAXEcW> EliminarClienteAsync(string Num_documento) {
+        public System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfstring> EliminarClienteAsync(string Num_documento) {
             return base.Channel.EliminarClienteAsync(Num_documento);
         }
         
-        public JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfArrayOfClienteNBNIoaBX ListarCliente() {
+        public JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfArrayOfClienteyy3A9QwE ListarCliente() {
             return base.Channel.ListarCliente();
         }
         
-        public System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfArrayOfClienteNBNIoaBX> ListarClienteAsync() {
+        public System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfArrayOfClienteyy3A9QwE> ListarClienteAsync() {
             return base.Channel.ListarClienteAsync();
         }
         
-        public JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfContratoClienteNBNIoaBX RegistrarContratoCliente(JoinTelcoServicesTest.ServiceJoinTelco.ContratoCliente contratoCliente) {
+        public JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfContratoClienteyy3A9QwE RegistrarContratoCliente(JoinTelcoServicesTest.ServiceJoinTelco.ContratoCliente contratoCliente) {
             return base.Channel.RegistrarContratoCliente(contratoCliente);
         }
         
-        public System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfContratoClienteNBNIoaBX> RegistrarContratoClienteAsync(JoinTelcoServicesTest.ServiceJoinTelco.ContratoCliente contratoCliente) {
+        public System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfContratoClienteyy3A9QwE> RegistrarContratoClienteAsync(JoinTelcoServicesTest.ServiceJoinTelco.ContratoCliente contratoCliente) {
             return base.Channel.RegistrarContratoClienteAsync(contratoCliente);
         }
         
-        public JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfContratoClienteNBNIoaBX ObtenerContratoCliente(string ContratoClienteId) {
+        public JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfContratoClienteyy3A9QwE ObtenerContratoCliente(string ContratoClienteId) {
             return base.Channel.ObtenerContratoCliente(ContratoClienteId);
         }
         
-        public System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfContratoClienteNBNIoaBX> ObtenerContratoClienteAsync(string ContratoClienteId) {
+        public System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfContratoClienteyy3A9QwE> ObtenerContratoClienteAsync(string ContratoClienteId) {
             return base.Channel.ObtenerContratoClienteAsync(ContratoClienteId);
         }
         
-        public JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfContratoClienteNBNIoaBX ModificarContratoCliente(JoinTelcoServicesTest.ServiceJoinTelco.ContratoCliente contratoCliente) {
+        public JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfContratoClienteyy3A9QwE ModificarContratoCliente(JoinTelcoServicesTest.ServiceJoinTelco.ContratoCliente contratoCliente) {
             return base.Channel.ModificarContratoCliente(contratoCliente);
         }
         
-        public System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfContratoClienteNBNIoaBX> ModificarContratoClienteAsync(JoinTelcoServicesTest.ServiceJoinTelco.ContratoCliente contratoCliente) {
+        public System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfContratoClienteyy3A9QwE> ModificarContratoClienteAsync(JoinTelcoServicesTest.ServiceJoinTelco.ContratoCliente contratoCliente) {
             return base.Channel.ModificarContratoClienteAsync(contratoCliente);
         }
         
-        public JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfstringRvdAXEcW EliminarContratoCliente(string ContratoClienteId) {
+        public JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfstring EliminarContratoCliente(string ContratoClienteId) {
             return base.Channel.EliminarContratoCliente(ContratoClienteId);
         }
         
-        public System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfstringRvdAXEcW> EliminarContratoClienteAsync(string ContratoClienteId) {
+        public System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfstring> EliminarContratoClienteAsync(string ContratoClienteId) {
             return base.Channel.EliminarContratoClienteAsync(ContratoClienteId);
         }
         
-        public JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfArrayOfContratoClienteNBNIoaBX ListarContratoCliente() {
+        public JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfArrayOfContratoClienteyy3A9QwE ListarContratoCliente() {
             return base.Channel.ListarContratoCliente();
         }
         
-        public System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfArrayOfContratoClienteNBNIoaBX> ListarContratoClienteAsync() {
+        public System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfArrayOfContratoClienteyy3A9QwE> ListarContratoClienteAsync() {
             return base.Channel.ListarContratoClienteAsync();
         }
         
-        public JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfPlan_ServicioNBNIoaBX ObtenerPlanServiciobyId(int codigoPlanServicio) {
+        public JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfPlan_Servicioyy3A9QwE ObtenerPlanServiciobyId(int codigoPlanServicio) {
             return base.Channel.ObtenerPlanServiciobyId(codigoPlanServicio);
         }
         
-        public System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfPlan_ServicioNBNIoaBX> ObtenerPlanServiciobyIdAsync(int codigoPlanServicio) {
+        public System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfPlan_Servicioyy3A9QwE> ObtenerPlanServiciobyIdAsync(int codigoPlanServicio) {
             return base.Channel.ObtenerPlanServiciobyIdAsync(codigoPlanServicio);
         }
         
-        public JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfArrayOfPlan_ServicioNBNIoaBX ObtenerPlanServicios() {
+        public JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfArrayOfPlan_Servicioyy3A9QwE ObtenerPlanServicios() {
             return base.Channel.ObtenerPlanServicios();
         }
         
-        public System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfArrayOfPlan_ServicioNBNIoaBX> ObtenerPlanServiciosAsync() {
+        public System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfArrayOfPlan_Servicioyy3A9QwE> ObtenerPlanServiciosAsync() {
             return base.Channel.ObtenerPlanServiciosAsync();
         }
         
-        public JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfbooleanRvdAXEcW ValidarConexion(JoinTelcoServicesTest.ServiceJoinTelco.Usuario usuario) {
+        public JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfboolean ValidarConexion(JoinTelcoServicesTest.ServiceJoinTelco.Usuario usuario) {
             return base.Channel.ValidarConexion(usuario);
         }
         
-        public System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfbooleanRvdAXEcW> ValidarConexionAsync(JoinTelcoServicesTest.ServiceJoinTelco.Usuario usuario) {
+        public System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfboolean> ValidarConexionAsync(JoinTelcoServicesTest.ServiceJoinTelco.Usuario usuario) {
             return base.Channel.ValidarConexionAsync(usuario);
         }
         
-        public JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfUsuarioNBNIoaBX ObtenerUsuario(string codigoUsuario) {
+        public JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfUsuarioyy3A9QwE ObtenerUsuario(string codigoUsuario) {
             return base.Channel.ObtenerUsuario(codigoUsuario);
         }
         
-        public System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfUsuarioNBNIoaBX> ObtenerUsuarioAsync(string codigoUsuario) {
+        public System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfUsuarioyy3A9QwE> ObtenerUsuarioAsync(string codigoUsuario) {
             return base.Channel.ObtenerUsuarioAsync(codigoUsuario);
         }
         
-        public JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfUsuarioNBNIoaBX ActualizarUsuario(JoinTelcoServicesTest.ServiceJoinTelco.Usuario usuario) {
+        public JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfUsuarioyy3A9QwE ActualizarUsuario(JoinTelcoServicesTest.ServiceJoinTelco.Usuario usuario) {
             return base.Channel.ActualizarUsuario(usuario);
         }
         
-        public System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.ResponseRecordResponseObjectOfUsuarioNBNIoaBX> ActualizarUsuarioAsync(JoinTelcoServicesTest.ServiceJoinTelco.Usuario usuario) {
+        public System.Threading.Tasks.Task<JoinTelcoServicesTest.ServiceJoinTelco.RecordResponseObjectOfUsuarioyy3A9QwE> ActualizarUsuarioAsync(JoinTelcoServicesTest.ServiceJoinTelco.Usuario usuario) {
             return base.Channel.ActualizarUsuarioAsync(usuario);
         }
     }

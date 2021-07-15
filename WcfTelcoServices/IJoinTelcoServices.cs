@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using System.ServiceModel;
 using WcfTelcoServices.Dominio;
-using WcfTelcoServices.Utilitarios;
-using static WcfTelcoServices.Dominio.Response;
+ 
 
 namespace WcfTelcoServices
 {
@@ -11,7 +10,7 @@ namespace WcfTelcoServices
     [ServiceContract]
     public interface IJoinTelcoServices
     {
-        [FaultContract(typeof(Plan_Servicio))]
+        [FaultContract(typeof(ErroresException))]
 
         #region Response Cliente Servicios
         [OperationContract]
@@ -49,8 +48,11 @@ namespace WcfTelcoServices
         #region Response Usuario Servicios
         [OperationContract]
         RecordResponseObject<bool> ValidarConexion(Usuario usuario);
+
+        [FaultContract(typeof(ErroresException))]
         [OperationContract]
         RecordResponseObject<Usuario> ObtenerUsuario(string codigoUsuario);
+
         [OperationContract]
         RecordResponseObject<Usuario> ActualizarUsuario(Usuario usuario);
         #endregion

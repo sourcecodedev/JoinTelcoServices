@@ -1,7 +1,8 @@
 ﻿
 using System.Runtime.Serialization;
-namespace WcfTelcoServices.Utilitarios
+namespace WcfTelcoServices.Dominio
 {
+
     [DataContract]
     public class ErroresException
     {

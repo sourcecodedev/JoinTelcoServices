@@ -70,6 +70,7 @@
   <ItemGroup>
     <Compile Include="Dominio\Cliente.cs" />
     <Compile Include="Dominio\ContratoCliente.cs" />
+    <Compile Include="Dominio\ErroresException.cs" />
     <Compile Include="Dominio\Plan_Servicio.cs" />
     <Compile Include="Dominio\Usuario.cs" />
     <Compile Include="IJoinTelcoServices.cs" />
@@ -80,14 +81,14 @@
     <Compile Include="Persistencia\ContratoClienteDao.cs" />
     <Compile Include="Persistencia\Plan_ServicioDao.cs" />
     <Compile Include="Persistencia\UsuarioDao.cs" />
-    <Compile Include="Utilitarios\ErroresException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Utilitarios\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dominio\Response.cs" />
+    <Compile Include="Dominio\RecordResponseObject.cs" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
